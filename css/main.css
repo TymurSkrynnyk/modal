@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 28% auto;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+.modal-box {
+  margin: 10% auto;
+  width: 400px;
+  background: rgb(36, 36, 36);
+  color: antiquewhite;
+  position: relative;
+  animation: modalopen 0.5s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  padding: 50px;
+}
+
+.modal-body h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-body .btn {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modal .close {
+  cursor: pointer;
+  height: 23px;
+  width: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal .modal-footer {
+  background: rgb(36, 36, 36);
+  color: rgb(130, 130, 130);
+  padding: 20px 0;
+  border-top: #eee 1px solid;
+  text-align: center;
+}
+
+.modal .modal-footer a {
+  color: steelblue;
+}
+
+/* Form */
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.form-control input {
+  width: 100%;
+  border: 2px #ccc solid;
+  border-radius: 5px;
+  height: 40px;
+  padding: 5px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
